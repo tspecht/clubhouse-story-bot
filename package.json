@@ -1,0 +1,34 @@
+{
+  "name": "clubhouse-story-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf build && mkdir build",
+    "build-babel": "babel -d ./build ./src -s",
+    "build": "npm run clean && npm run build-babel",
+    "serve": "npm run build && npm run start",
+    "start": "node ./build/bot.js"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.11.2",
+    "botbuilder-adapter-slack": "^1.0.13",
+    "botbuilder-storage-mongodb": "^0.9.5",
+    "botkit": "^4.10.0",
+    "botkit-plugin-cms": "^1.0.3",
+    "clubhouse-lib": "^0.10.0",
+    "dotenv": "^7.0.0",
+    "es6-promise": "^4.2.8",
+    "fetch-everywhere": "^1.0.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-transform-runtime": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-es2015": "^7.0.0-beta.53",
+    "@babel/preset-flow": "^7.10.4",
+    "babel-polyfill": "^6.26.0"
+  }
+}

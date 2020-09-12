@@ -1,0 +1,6 @@
+{
+    "name": "Clubhouse Story Bot",
+    "description": "A small Slackbot that creates Clubhouse Stories",
+    "repository": "https://github.com/tspecht/clubhouse-story-bot",
+    "keywords": ["clubhouse", "slack", "bot", "botkit"]
+  }
